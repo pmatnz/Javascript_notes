@@ -32,6 +32,12 @@ function (test) {
     //insert fuction text here
 }
 
+// To call a function use the function like the above, if the function has an argument which goes inside the parenthases add that in there.
+myFunction (argument) {}
+
+// To access a function that hasm more than one property you need to use bracket notation, values start at 0 and you need to include [0] with the number inside
+// make sure when you are accessing part of an array to add the brackets outside the original array , example below
+location["button text"][0]; // see how 0 is added after the array property
 
 //COMMENTS
 
@@ -51,3 +57,25 @@ say Hi how aer you */
 const sayHello = document.querySelector("#hello"); //This is accessing the hello element from the HTML which is what will be edited through javascript
 sayHello.innerText = "Hello Back";
 
+//If you have a string that needs special characters that may cause issues you can use an escape which is \"texthere\" this will make sure the text remains a string
+
+//OBJECTS
+/* Objects are simliar to dictionarys from Python, they have key, value pairs. The format for an object is the following
+the key is the name of the property and the value is the value that property holds */
+
+let person = {
+    name: "John",
+    age: 25,
+    city: "Example City"
+};
+
+/* There are 2 ways of adding a property, one is dot notation where you will use : as a seperator, the 2nd is using brakcet notation where you will wrap the property 
+in commas "" use this when your property requires a space or special characters*/
+
+{
+    name: "Naomi", // Dot notation
+    "favorite color": "purple"// Bracket notation
+  }
+
+//You can access objects via dot notations 
+person.name // person would be the function and name the object
