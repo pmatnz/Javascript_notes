@@ -13,10 +13,23 @@ const Name = "paulMatthews" // This will not be able to be changed in the future
 
 // variables can be assigned multiple data types, strings, nums. If declaring a variable with a string make sure to include "" or it will give an error
 
+// If you need to add a variable to the end of a string you can use concatenation this is just adding a + after the string
+text.innerText = "Hello my name is" + name + "how are you? what is your" + name +"?";
+//Something to remember inner text just overwrites any current text, if you need to add anything on use the += or +
+text.innerText =+ "hello this is adding more string data on";
+// Using var make variables global can't be used twice, using let allows you to use the same variable name in different scopes
+
 //ARRAYS
 //You can use arrays in variables to hold multiple items
 let myArray = ["This", "holds", "multiple", "items"] ;
+// Arrays have a length property which gives you the length of the array index, this can also be used with conditional statements
+myArray.length //  This is the length syntax
+/* ONE thing to remember it is standard practice to use -1 at the end of .length if you are using it, if you are using a fixed length that will never change .length
+will be ok but standard practice make sure to always use the below */
+myArr.length -1 // this is going to ensure you do not receive an out of bounds error
+// If you are looking to check for a specific length you do not need to use -1
 
+// DOM DOCUMENT OBJECT MODEL USE THIS TO LINK HTML ELEMENTS WITH JAVASCRIPT
 //javascript interacts using DOM , document object model if you want to find specific elements in HTML you can use a query selector
 //to find all the h1 in HTML do the below. You always have to start with "document" when interacting with HTML. There are also ther DOM objects you can use
 let h1 = document.querySelector("h1"); // this will locate the h1 HTML selector
@@ -72,6 +85,10 @@ let person = {
 /* There are 2 ways of adding a property, one is dot notation where you will use : as a seperator, the 2nd is using brakcet notation where you will wrap the property 
 in commas "" use this when your property requires a space or special characters*/
 
+// You can use dot notations to access the object property
+weapons[currentWeapons].name; // using dot notation using .name is going to access the object and if you have some sort of counter going it will be based on 
+// the name that matches the counter.
+
 {
     name: "Naomi", // Dot notation
     "favorite color": "purple"// Bracket notation
@@ -79,3 +96,37 @@ in commas "" use this when your property requires a space or special characters*
 
 //You can access objects via dot notations 
 person.name // person would be the function and name the object
+
+// You can use short hand when using maths see below
+gold = gold + 10// This is the long way
+gold += 10 // this is the short hand way this is called compound assignment
+
+//IF STATEMENTS CONDITIONALS
+//If you want to add a conditional you would use an IF statement
+if ("condition") {
+    "action condtion if conditon met"
+}
+
+// If using a conditional add the code inside the function
+function buyHealth() {
+    if (gold >= 10) {
+      gold -= 10;
+      health += 10;
+      goldText.innerText = gold;
+      healthText.innerText = health;
+    } else {
+      text.innerText = "Not enough gold to buy health!";
+    }
+  }
+
+  // Another way of adding one on to a variable or function is just use ++
+  myWeapon = 0; , myWeapon ++ // this will incrament myWeapon by 1
+
+
+// METHODS
+// The push method will update an array to contain new information, it can also update other thing as well
+myarr = [2,4,6,7];
+mySecondArr = [34,22];
+myarr.push(mySecondArr); // This is going to update myarr and add 34 and 22 on to it.
+// The shift() method will take the first index/ element from an array and assign it to another variable. it returns the first element.
+
