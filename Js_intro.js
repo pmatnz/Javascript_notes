@@ -1,4 +1,4 @@
-//VARIABLES
+////*****************VARIABLES//*****************
 
 // use var to declare a variable 
 var Name = "Paul"; // any name goes inside the name variable, i have selected Paul. Paul is a string. This is called initialization.
@@ -18,8 +18,15 @@ text.innerText = "Hello my name is" + name + "how are you? what is your" + name 
 //Something to remember inner text just overwrites any current text, if you need to add anything on use the += or +
 text.innerText =+ "hello this is adding more string data on";
 // Using var make variables global can't be used twice, using let allows you to use the same variable name in different scopes
+/* Something important to note, if you are using text.inner text twice where you want to append another variable or function to the already text.innerText
+you do need to use += which will add the 2nd text on. If you failto do this the 2nd text.InnerText will overwrite the first. */
+function attack() {
+  text.innerText = "The " + monsters[fighting].name + " attacks.";
+  text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
 
-//ARRAYS
+
+  ////*****************ARRAYS//*****************
+
 //You can use arrays in variables to hold multiple items
 let myArray = ["This", "holds", "multiple", "items"] ;
 // Arrays have a length property which gives you the length of the array index, this can also be used with conditional statements
@@ -29,18 +36,25 @@ will be ok but standard practice make sure to always use the below */
 myArr.length -1 // this is going to ensure you do not receive an out of bounds error
 // If you are looking to check for a specific length you do not need to use -1
 
-// DOM DOCUMENT OBJECT MODEL USE THIS TO LINK HTML ELEMENTS WITH JAVASCRIPT
+// //*****************DOM DOCUMENT OBJECT MODEL USE THIS TO LINK HTML ELEMENTS WITH JAVASCRIPT//*****************
+
 //javascript interacts using DOM , document object model if you want to find specific elements in HTML you can use a query selector
 //to find all the h1 in HTML do the below. You always have to start with "document" when interacting with HTML. There are also ther DOM objects you can use
 let h1 = document.querySelector("h1"); // this will locate the h1 HTML selector
 let button1 = document.querySelector("#button1"); // this is going to target button1 which is an HTML ID, if it was a class you would use the .button1 
 // instead of the #. # to access and ID, . to access a class.
 
+////*****************ACESSING CSS USING JAVASCRIPT//*****************
+
+//If you want to change a css property using javascript you can do so useing dot notation, use the variablename then style then the css property you want to edit
+monsterStatus.style.display ="block"; /* This will the display from none to block when this is ran. A query selector has already been done which give access
+/* to the monsterStatus css property
+
 //Always place the script tag just above the </body> 
 
-//FUNCTIONS
+////*****************FUNCTIONS//*****************
 
-// Use functions allow you to run a set of code any any specific time use the following format
+//Use functions allow you to run a set of code any any specific time use the following format
 function (test) {
     //insert fuction text here
 }
@@ -52,14 +66,14 @@ myFunction (argument) {}
 // make sure when you are accessing part of an array to add the brackets outside the original array , example below
 location["button text"][0]; // see how 0 is added after the array property
 
-//COMMENTS
+////*****************COMMENTS//*****************
 
 //Single line comments use //
 
 /* Multi line 
 commments can use */
 
-//Javascript Properties
+////*****************Javascript Properties//*****************
 
 /*To attach a function to a javascript property like when someone clicks a mouse you can use the following format, need to use dot notation then the property*/
 button1.onclick = goStore; // When button1 element is clicked it will run the onStore variable and output "Going to store."
@@ -72,7 +86,8 @@ sayHello.innerText = "Hello Back";
 
 //If you have a string that needs special characters that may cause issues you can use an escape which is \"texthere\" this will make sure the text remains a string
 
-//OBJECTS
+////*****************OBJECTS//*****************
+
 /* Objects are simliar to dictionarys from Python, they have key, value pairs. The format for an object is the following
 the key is the name of the property and the value is the value that property holds */
 
@@ -101,7 +116,8 @@ person.name // person would be the function and name the object
 gold = gold + 10// This is the long way
 gold += 10 // this is the short hand way this is called compound assignment
 
-//IF STATEMENTS CONDITIONALS
+//*****************IF STATEMENTS CONDITIONALS//*****************
+
 //If you want to add a conditional you would use an IF statement
 if ("condition") {
     "action condtion if conditon met"
@@ -122,11 +138,37 @@ function buyHealth() {
   // Another way of adding one on to a variable or function is just use ++
   myWeapon = 0; , myWeapon ++ // this will incrament myWeapon by 1
 
+//You can add multipe else if statements if you have other conditions you want met now just the one  
+if (health <= 0) {
+  lose()
+} else if (monsterHealth <= 0) {
+  defeatMonster()
+};
 
-// METHODS
+//  
+
+
+// //*****************METHODS//*****************
+
 // The push method will update an array to contain new information, it can also update other thing as well
 myarr = [2,4,6,7];
 mySecondArr = [34,22];
 myarr.push(mySecondArr); // This is going to update myarr and add 34 and 22 on to it.
 // The shift() method will take the first index/ element from an array and assign it to another variable. it returns the first element.
+// Javascript has math methods as well
+Math.floor() // this rounds a given number down to the nearest INT whole number and will always give one less if used with math.random
+Math.random()// this generates a random number from 0 to 1 inclusive
+// to generate a random number and make sure it remains a whole number you can use
+Math.floor(math.random() *5) + 1); // the reason + 1 is added is this will give a result of 1 and 5 not 1 and 4, if it was * 6 then it woud be 1 and 5, 
+// it will never give the last number you multiply or add by.
+// if nothing is specific it will always be 0 and 1 , if a variable is used first it will be that var and 1 and if 2nd it wil be 0 and that var
+// Make sure to add + 1 if you are asked to multiple or add by a specific number so you get that number and it wont just round down and miss that.
+
+////*****************STRING INTERPOLATION//*****************
+// instead of using string concatenation you can do the following directly into a string, it uses back ticks far left on keyboard ` next to 1.
+const name = "John";
+const age = 25;
+
+// Using template literals
+const message = `Hello, my name is ${name} and I am ${age} years old.`;
 
