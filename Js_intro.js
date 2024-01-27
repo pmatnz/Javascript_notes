@@ -1,4 +1,4 @@
-////*****************VARIABLES//*****************
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$VARIABLES//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 // use var to declare a variable 
 var Name = "Paul"; // any name goes inside the name variable, i have selected Paul. Paul is a string. This is called initialization.
@@ -25,7 +25,7 @@ function attack() {
   text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
 
 
-  ////*****************ARRAYS//*****************
+  ////$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ARRAYS//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //You can use arrays in variables to hold multiple items
 let myArray = ["This", "holds", "multiple", "items"] ;
@@ -36,7 +36,7 @@ will be ok but standard practice make sure to always use the below */
 myArr.length -1 // this is going to ensure you do not receive an out of bounds error
 // If you are looking to check for a specific length you do not need to use -1
 
-// //*****************DOM DOCUMENT OBJECT MODEL USE THIS TO LINK HTML ELEMENTS WITH JAVASCRIPT//*****************
+////$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$DOM DOCUMENT OBJECT MODEL USE THIS TO LINK HTML ELEMENTS WITH JAVASCRIPT//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //javascript interacts using DOM , document object model if you want to find specific elements in HTML you can use a query selector
 //to find all the h1 in HTML do the below. You always have to start with "document" when interacting with HTML. There are also ther DOM objects you can use
@@ -44,15 +44,15 @@ let h1 = document.querySelector("h1"); // this will locate the h1 HTML selector
 let button1 = document.querySelector("#button1"); // this is going to target button1 which is an HTML ID, if it was a class you would use the .button1 
 // instead of the #. # to access and ID, . to access a class.
 
-////*****************ACESSING CSS USING JAVASCRIPT//*****************
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ACESSING CSS USING JAVASCRIPT//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //If you want to change a css property using javascript you can do so useing dot notation, use the variablename then style then the css property you want to edit
 monsterStatus.style.display ="block"; /* This will the display from none to block when this is ran. A query selector has already been done which give access
-/* to the monsterStatus css property
+/* to the monsterStatus css property*/
 
 //Always place the script tag just above the </body> 
 
-////*****************FUNCTIONS//*****************
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ FUNCTIONS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //Use functions allow you to run a set of code any any specific time use the following format
 function (test) {
@@ -66,14 +66,20 @@ myFunction (argument) {}
 // make sure when you are accessing part of an array to add the brackets outside the original array , example below
 location["button text"][0]; // see how 0 is added after the array property
 
-////*****************COMMENTS//*****************
+//functions can also return a value at the ned do so by using return
+function myFucn(arg) {
+  return arg;
+}
+
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ COMMENTS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //Single line comments use //
 
 /* Multi line 
 commments can use */
 
-////*****************Javascript Properties//*****************
+////$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ JAVASCRIPT PROPERTIES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 /*To attach a function to a javascript property like when someone clicks a mouse you can use the following format, need to use dot notation then the property*/
 button1.onclick = goStore; // When button1 element is clicked it will run the onStore variable and output "Going to store."
@@ -86,7 +92,7 @@ sayHello.innerText = "Hello Back";
 
 //If you have a string that needs special characters that may cause issues you can use an escape which is \"texthere\" this will make sure the text remains a string
 
-////*****************OBJECTS//*****************
+////$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ OBJECTS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 /* Objects are simliar to dictionarys from Python, they have key, value pairs. The format for an object is the following
 the key is the name of the property and the value is the value that property holds */
@@ -116,12 +122,14 @@ person.name // person would be the function and name the object
 gold = gold + 10// This is the long way
 gold += 10 // this is the short hand way this is called compound assignment
 
-//*****************IF STATEMENTS CONDITIONALS//*****************
+////$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ IF STATEMENTS CONDITIONALS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
 //If you want to add a conditional you would use an IF statement
 if ("condition") {
     "action condtion if conditon met"
 }
+
+//REMEMBER THE CONDITION GOES INSIDE () IN THE IF STATEMENT!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // If using a conditional add the code inside the function
 function buyHealth() {
@@ -137,6 +145,8 @@ function buyHealth() {
 
   // Another way of adding one on to a variable or function is just use ++
   myWeapon = 0; , myWeapon ++ // this will incrament myWeapon by 1
+  // You can also decrement as well by using --
+  myWeapon = 0; , myWeapon -- // this will remove 1
 
 //You can add multipe else if statements if you have other conditions you want met now just the one  
 if (health <= 0) {
@@ -145,10 +155,53 @@ if (health <= 0) {
   defeatMonster()
 };
 
-//  
+// If you need to be 100% you can use strict operator which is ===
+if (dog === cat) { //strict operator in use here
+  do something
+};
 
+// TERNARY OPERATOR !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// if else statements can be done in a different format 
+condition ? true : false.
+// example below
+if (num > 5) {
+  bigger()
+} else {
+  smaller()
+}
 
-// //*****************METHODS//*****************
+//using Ternary it gets turned into the following
+
+if num > 5 ? bigger() : smaller(); //the : replaces else
+// Only use ternary for a simple if else, not if there are multiple conditions as it makes readability difficult
+
+// or operator is || this is used if 2 conditions are included but only one needs to be met 
+if (paul == 2 || 5){ // or operator will use the first value if truthy , if not then move to the 2nd.
+  excuteCode()
+}
+
+// The and operator checks if two statements are true &&
+if (firstName === "Quincy" && lastName === "Larson") {}
+// the NOT equal to operator you will use !==
+if (firstName === "Quincy" && lastName !== "Larson") {} // last name has a NOT equal too both of these conditions have to be met
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ LOOPS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+//WHILE LOOPS!!!!!!!!!!!!!! accepts a condition an will run the condition until it is no longer true
+while (i < 5) { // This while loop will keep running until i becomes 5 or more
+  DoSomething
+} 
+
+/* for loops a created with 3 expressions each followed by a semi colon ;. for (a; b; c;)
+a is the initialization express so the variable, b is the conditon and c is the counter or final expression*/
+
+\n // This means new line you can add it inside a string
+
+//FOR LOOPS!!!!!!!!!!!!!!!  
+// for loops will run a specific amount of time until a certain condition. As long as the condition evalualtes to true.
+for (let x = 1; x < 5; x++) {} // creates a variable x, when x is less than 5 add 1 more to x until x hits 5 then the loop terminates
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ METHODS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*
 
 // The push method will update an array to contain new information, it can also update other thing as well
 myarr = [2,4,6,7];
@@ -163,8 +216,19 @@ Math.floor(math.random() *5) + 1); // the reason + 1 is added is this will give 
 // it will never give the last number you multiply or add by.
 // if nothing is specific it will always be 0 and 1 , if a variable is used first it will be that var and 1 and if 2nd it wil be 0 and that var
 // Make sure to add + 1 if you are asked to multiple or add by a specific number so you get that number and it wont just round down and miss that.
+inventory.pop() 
+// This will return the last item in an array to the user so you can use this to take the last item and assign it to another variable or function
+.include() 
+// this checks if an element exists in an array and will return true or false
+const numbersArray = [1, 2, 3, 4, 5] 
+const number = 3
 
-////*****************STRING INTERPOLATION//*****************
+if (numbersArray.includes(number)) { // checking if number exists in numbersArray
+  console.log("The number is in the array.")
+}
+
+
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ STRING INTERPOLATION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // instead of using string concatenation you can do the following directly into a string, it uses back ticks far left on keyboard ` next to 1.
 const name = "John";
 const age = 25;
