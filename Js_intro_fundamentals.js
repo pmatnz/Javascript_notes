@@ -226,6 +226,8 @@ const number = 3
 if (numbersArray.includes(number)) { // checking if number exists in numbersArray
   console.log("The number is in the array.")
 }
+insertAdjacentHTML(0)// This method will insert HTML using javascript and it will inser it around other HTML and won't over write it  
+  // it takes 2 Parametres, 1. Where you want the HTML inserted and 2. what HTML to parse in.
 
 
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ STRING INTERPOLATION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
