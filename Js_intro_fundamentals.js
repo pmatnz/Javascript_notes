@@ -89,6 +89,12 @@ function myFucn(arg) {
   return arg;
 }
 
+// Browsers have built in functions called alert functions, this will send a pop up to the user, the arguement is the message
+alert("Add message to pop up here);
+
+// Number() function will convert a string usually to a number
+      Number("8") // this will bring back 8, if it's not a number it will display NaN - Not a Number
+	
 
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ COMMENTS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
