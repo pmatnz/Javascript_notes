@@ -291,6 +291,8 @@ Array.from() // this will convert a nodelist or array like objects into actual a
 
 
 
+
+
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ STRING INTERPOLATION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 // instead of using string concatenation you can do the following directly into a string, it uses back ticks far left on keyboard ` next to 1.
 const name = "John";
