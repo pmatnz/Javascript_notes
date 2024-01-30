@@ -276,6 +276,9 @@ myVar.addEventListner(arg1,arg2)
 second will be what you want to happen when this happens, this will usually be a function
 The first argument has to be a string */
 
+// When declaring variables that will use eventlistners if you need an argument its common pratice to use "e"
+
+varName = "StrinG".toLocaleLowerCase() // this will make all your characters lower case using this method
 
 
 
@@ -327,3 +330,6 @@ let Myclass =  /\d+e\d+/i;
 // important not to use += or it may apend it
 
 .value // this is getting the current value the user has entered, will relate to form data usually
+
+.insertAdjacentHTM // this will not overwrite the current HTML and add on to it useful for forms if user selects to add more info.
+// a nodelist is array like and it contains only the elemnts which match the query selector
