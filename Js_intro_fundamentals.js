@@ -89,6 +89,12 @@ function myFucn(arg) {
   return arg;
 }
 
+// Browsers have built in functions called alert functions, this will send a pop up to the user, the arguement is the message
+alert("Add message to pop up here);
+
+// Number() function will convert a string usually to a number
+      Number("8") // this will bring back 8, if it's not a number it will display NaN - Not a Number
+	
 
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ COMMENTS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
@@ -330,6 +336,3 @@ let Myclass =  /\d+e\d+/i;
 // important not to use += or it may apend it
 
 .value // this is getting the current value the user has entered, will relate to form data usually
-
-.insertAdjacentHTM // this will not overwrite the current HTML and add on to it useful for forms if user selects to add more info.
-// a nodelist is array like and it contains only the elemnts which match the query selector
