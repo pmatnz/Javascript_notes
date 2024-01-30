@@ -241,6 +241,7 @@ Math.floor(math.random() *5) + 1); // the reason + 1 is added is this will give 
 // it will never give the last number you multiply or add by.
 // if nothing is specific it will always be 0 and 1 , if a variable is used first it will be that var and 1 and if 2nd it wil be 0 and that var
 // Make sure to add + 1 if you are asked to multiple or add by a specific number so you get that number and it wont just round down and miss that.
+Math.abs() // this will make sure that you are returning an absoulte number
 
 inventory.pop() 
 // This will return the last item in an array to the user so you can use this to take the last item and assign it to another variable or function
