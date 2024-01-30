@@ -287,6 +287,8 @@ The first argument has to be a string */
 
 varName = "StrinG".toLocaleLowerCase() // this will make all your characters lower case using this method
 
+Array.from() // this will convert a nodelist or array like objects into actual arrays
+
 
 
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ STRING INTERPOLATION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
