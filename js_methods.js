@@ -1,5 +1,3 @@
-
-
 //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ METHODS $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*
 
 // The push method will update an array to contain new information, it can also update other thing as well
@@ -67,29 +65,26 @@ Array.from() // this will convert a nodelist or array like objects into actual a
 
 
 
-/
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ STRING INTERPOLATION $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// instead of using string concatenation you can do the following directly into a string, it uses back ticks far left on keyboard ` next to 1.
+const name = "John";
+const age = 25;
 
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ REGULAR EXPRESSIONS//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-// regex - regular expressions is used to match specific data in a much shorter way than if statements and loops
-const regex = /\+-/s/; /* this will match any + and - characters, an escape character had to be used on + because its a special charcter
-using \ is shorthand which matches speciific characters eg \s will match ANY white spaces - NOTE this will only match in that order, if - comes first
-it wont match it only + to avoid this you can use [] / [+\ -\ \s] / this will check for each of these, note \ is used becuase they are all special characters so it
-is escaping them. */ 
+// Using template literals
+const message = `Hello, my name is ${name} and I am ${age} years old.`;
 
-// Using g (GLOBAL) will match ALL expressions not just stop at the first one use this after the closing /
-const regex = /\+-/s/g;
-// there is an i flag which makes your regex case sensitive so it will also pick up capitals. insensitive
-const regex = /hello/i; 
-// character class can be used to match numbers, any number between 0-9
-let Myclass = /[0-9]/
-// + modifier allows a match one or more times, add this after a class
-// /d is shorthand which will match any digit this is used as \d
-let Myclass =  /\d+e\d+/i;
+//Function example with loop and if statement and methods
+function cleanInputString(str) {
+	let strArray = str.split(""); // this will split str by ""
+	let cleanStrArray = [];
 
-
-//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ PROPERTIES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-// properties are what goes on the end using .notation, there are many properties so far but tracking them now
-.innerHTML // this will append any HTML you have added in your javascript to the HTML that has already been written
-// important not to use += or it may apend it
-
-.value // this is getting the current value the user has entered, will relate to form data usually
+	for (let i = 0; i < strArray.length; i++) {
+		// creating the loop condition
+		if (!["+", "-", " "].includes(strArray[i])) { //split turns strArray into an array so have to use []
+			/*checking if  +,- or space does NOT exist in strArray using .includes method, 
+            adding in [i] so it keeps checking with the loop*/
+			cleanStrArray.push(strArray[i]);
+			//if they do NOT have the characters it pushes the string to the cleanstrArray variable using push method.
+		}
+	}
+}
