@@ -20,3 +20,7 @@ sayHello.innerText = "Hello Back";
 
 .value // this is getting the current value the user has entered, will relate to form data usually
 
+.textContent
+//This will display the current content that is assigned to the text element 
+let text = document.getElementById("buttonText"); // if button text is "hello" it will say Hello
+
