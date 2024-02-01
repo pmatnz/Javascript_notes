@@ -28,3 +28,14 @@ monsterStatus.style.display ="block"; /* This will the display from none to bloc
 /* to the monsterStatus css property*/
 
 //Always place the script tag just above the </body> 
+
+//good example for eventlisteners and elemtByID
+let count = 0
+let increment = document.getElementById("increment-btn") //gives access to the button element
+let myCount = document.getElementById("count-el") // gives access to the html value
+
+function UpdateNum() {
+    count ++
+    myCount.textContent = count
+}
+increment.addEventListener("click",UpdateNum); // listening for clicks on button myCount once it's clicked will call UpdateNum function
