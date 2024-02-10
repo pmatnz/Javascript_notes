@@ -56,6 +56,11 @@ myVar.addEventListner(arg1,arg2)
 second will be what you want to happen when this happens, this will usually be a function
 The first argument has to be a string */
 
+// Functions can be created directly in the eventlistener using the following syntax
+myVar.addEventListener("click", function() {
+	console.log("Added function details here)
+}) // the close bracket goes at the end this makes sure the function is enclose in the eventlistener function
+
 // When declaring variables that will use eventlistners if you need an argument its common pratice to use "e"
 
 varName = "StrinG".toLocaleLowerCase() // this will make all your characters lower case using this method
