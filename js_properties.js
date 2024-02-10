@@ -25,8 +25,12 @@ sayHello.innerText = "Hello Back";
 let text = document.getElementById("buttonText"); // if button text is "hello" it will say Hello
 
 // the .value property will accept users input from an HTML text field, make sure to add this inside the eventlistener
+const saveButton = document.getElementById("input-btn"); // using const never want the buttons to be ressaigned
+const inputEl = document.getElementById("input-el");
+
+let myLeads = [];
+
 saveButton.addEventListener("click", function () {
-	const inputEl = document.getElementById("input-el").value; // value will get text input from a user
-	myLeads.push(inputEl); // outputting users input and updating it into the array using .push
+	myLeads.push(inputEl.value); // just add the .value property to the inputel variable this will display the users input in this case its updating it into an array
 	console.log(myLeads);
 });
