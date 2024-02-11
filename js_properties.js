@@ -34,3 +34,11 @@ saveButton.addEventListener("click", function () {
 	myLeads.push(inputEl.value); // just add the .value property to the inputel variable this will display the users input in this case its updating it into an array
 	console.log(myLeads);
 });
+
+// added html using javascript two ways to do this, best way is using innerHTML property
+ulEl.innerHTML += "<li>" + myLeads[i] + "</li>" // this will add list element into the HTML and populate with whatever user input you have got
+
+// 2nd way is using the following
+document.createElement(li) // this will create the list elements
+li.textContent = myArray
+// use .append to append the data to the list elements
