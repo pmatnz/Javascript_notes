@@ -37,3 +37,5 @@ number(addnumhere) // this will convert what inside number to a num
 // Local storage use this so if someone refreshes browsers their saved data will remain
 localStorage.setitem("KEY","VALIUE") 
 localStorage.setitem("myVar", "www.item.com") // this will save this data into the browser local storage
+localStorage.getitem("key") // this will get data from local storage
+localStorage.clear() // clears the cache
