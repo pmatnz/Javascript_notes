@@ -30,3 +30,6 @@ alert("Add message to pop up here);
 
 /* Multi line 
 commments can use */
+
+// number function will convert all strings into numbers, by default javascript uses strings
+number(addnumhere) // this will convert what inside number to a num
