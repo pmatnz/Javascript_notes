@@ -33,3 +33,7 @@ commments can use */
 
 // number function will convert all strings into numbers, by default javascript uses strings
 number(addnumhere) // this will convert what inside number to a num
+
+// Local storage use this so if someone refreshes browsers their saved data will remain
+localStorage.setitem("KEY","VALIUE") 
+localStorage.setitem("myVar", "www.item.com") // this will save this data into the browser local storage
