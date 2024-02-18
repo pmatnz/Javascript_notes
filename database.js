@@ -1,7 +1,7 @@
 // import database
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 // Create a object and assign it your database URL
-import { getDatabase, ref, push, } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"; // import ref (reference) and push which will push to database
+import { getDatabase, ref, push, onValue} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"; // import ref (reference) and push which will push to database
 
 const appSettings = {
 	databaseURL:
@@ -18,3 +18,11 @@ const moviesInDB = ref(database, "movies") // creates a reference field in the d
 // 4. creating variable that links to the import 
 // 5. make sure to add ref an push to the import
 // 6. to push data use push(moviesInDB, inputValue)
+
+********Pulling Data from DB**********
+// To pull data from DB we use onValue (Make sure this is added to the import)
+onValue(moviesInDB), function(snapshot) {
+	let moviesArray = Object.values(snapshot.val()) // This uses the onValue function which will pull our data from 
+	// the DB, snapshow is what is used to pull the current info in the DB, use snapshot.val to get data
+}
+	
