@@ -45,3 +45,7 @@ export function myFunction(a,b) { // export this makes it avaliable to be used i
 	return a + b }
 
 import {myFunction} from "add file link here" // adding import enables us to use the function that is from another file, make sure import is inside {} curly brackets
+// need to add the modul in the HTML inside the script, also need to add the link to the actual external file in script
+
+<script src="functions.js" type="module"></script>
+<script src="index.js" type="module"></script>
