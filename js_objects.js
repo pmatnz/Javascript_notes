@@ -27,3 +27,8 @@ person.name // person would be the function and name the object
 // You can use short hand when using maths see below
 gold = gold + 10// This is the long way
 gold += 10 // this is the short hand way this is called compound assignment
+
+// To change an Object to an array you can use the following
+Object.Values(myVar) // this will get the value which is the 2nd value in an object
+Object.Keys(myVar) // this will get the key
+Object.entries(myVar) // this will get both
