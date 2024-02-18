@@ -16,4 +16,5 @@ const moviesInDB = ref(database, "movies") // creates a reference field in the d
 // 2. Import Database using "Import" {NAME} "from" then add link
 // 3. create variable that links to your personal database link
 // 4. creating variable that links to the import 
-// 5. 
+// 5. make sure to add ref an push to the import
+// 6. to push data use push(moviesInDB, inputValue)
