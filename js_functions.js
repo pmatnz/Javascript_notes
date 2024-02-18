@@ -39,3 +39,9 @@ localStorage.setitem("KEY","VALIUE")
 localStorage.setitem("myVar", "www.item.com") // this will save this data into the browser local storage
 localStorage.getitem("key") // this will get data from local storage
 localStorage.clear() // clears the cache
+
+// You can create functions from other files, use the following
+export function myFunction(a,b) { // export this makes it avaliable to be used in other JS files
+	return a + b }
+
+import {myFunction} from "add file link here" // adding import enables us to use the function that is from another file, make sure import is inside {} curly brackets
