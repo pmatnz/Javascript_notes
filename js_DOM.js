@@ -39,3 +39,8 @@ function UpdateNum() {
     myCount.textContent = count
 }
 increment.addEventListener("click",UpdateNum); // listening for clicks on button myCount once it's clicked will call UpdateNum function
+
+// document.createElement this is used to create and insert elements into the HTML instead of using innerHTML or textContent
+myVar = document.createElement("li") // this will create list items
+myVar.textContent = "Text" // assign textContent to the variable which is what will be the list name
+myParentListElement.append(myVar) // using append to push the list into the HTML with the values assigned to myVar
