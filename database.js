@@ -26,3 +26,5 @@ onValue(moviesInDB), function(snapshot) {
 	// the DB, snapshow is what is used to pull the current info in the DB, use snapshot.val to get data
 }
 	
+// To get items from the DB assign this value to a variable snapshot.val
+let itemsInDB = Object.entries(snapshot.val()) // this will return all current items in the DB
