@@ -28,3 +28,7 @@ onValue(moviesInDB), function(snapshot) {
 	
 // To get items from the DB assign this value to a variable snapshot.val
 let itemsInDB = Object.entries(snapshot.val()) // this will return all current items in the DB
+
+// to delete items from DB use the the remove function, first add "remove" to the import
+remove(myVar) // this will delete it , myVar has to be the location so use the following
+myVar = ref(database, "tablename/ID" // tablename being the name of the DB takle and ID the key
