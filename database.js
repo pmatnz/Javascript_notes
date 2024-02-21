@@ -32,3 +32,5 @@ let itemsInDB = Object.entries(snapshot.val()) // this will return all current i
 // to delete items from DB use the the remove function, first add "remove" to the import
 remove(myVar) // this will delete it , myVar has to be the location so use the following
 myVar = ref(database, "tablename/ID" // tablename being the name of the DB takle and ID the key
+
+// important to remember the onValue function will listen to any changes happening in the application, snapshot will take in any values in the DB
