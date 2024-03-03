@@ -47,3 +47,5 @@ myParentListElement.append(myVar) // using append to push the list into the HTML
 
 //Changing elements style this can be done through JS
 document.getElementById('addHTMLIDinHERE').style.backgroundColor = red; // use HTML class or ID, style then what css property you want it changed too
+// Can also do it without the elemtByID
+style.backgroundColor = Red; / use if inside an event listener
