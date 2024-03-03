@@ -93,3 +93,9 @@ function cleanInputString(str) {
 		}
 	}
 }
+
+// Settimeout method uses the following syntax
+setTimeout(function() {} , delay ) // the delay is in miliseconds
+setTimeout(function() {
+	console.log("This will log after 3 seconds)
+}, 3000)	   
