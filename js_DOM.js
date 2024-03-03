@@ -44,3 +44,6 @@ increment.addEventListener("click",UpdateNum); // listening for clicks on button
 myVar = document.createElement("li") // this will create list items
 myVar.textContent = "Text" // assign textContent to the variable which is what will be the list name
 myParentListElement.append(myVar) // using append to push the list into the HTML with the values assigned to myVar
+
+//Changing elements style this can be done through JS
+document.getElementById('addHTMLIDinHERE').style.backgroundColor = red; // use HTML class or ID, style then what css property you want it changed too
