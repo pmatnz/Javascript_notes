@@ -51,4 +51,4 @@ document.getElementById('addHTMLIDinHERE').style.backgroundColor = red; // use H
 style.backgroundColor = Red; / use if you already have event listeners setup
 
 container.classlist.toggle('reverse") // this gives access to the containers class list that is indide it, it then assigns the reverse css selector to it
- // you can target HTML child elements if they have them by using this an many other methods                          
+ // you can target HTML child elements as long as they have classes assigned to them                          
