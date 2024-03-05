@@ -76,3 +76,18 @@ while (i < 5) { // This while loop will keep running until i becomes 5 or more
   //FOR LOOPS!!!!!!!!!!!!!!!  
   // for loops will run a specific amount of time until a certain condition. As long as the condition evalualtes to true.
   for (let x = 1; x < 5; x++) {} // creates a variable x, when x is less than 5 add 1 more to x until x hits 5 then the loop terminates
+
+
+// Iterating over arrays that have their own arrays these are nested loops. there are 2 ways to do this.
+ourArray = [1,3[3,4],3]
+newArray = [] // created an empty array to push the data into at the end
+for (let i=0;i < ourArray.length;i++) {
+    for (let j = 0; ourArray[i].moreinfohere.length;j++) { // this will get the inner values of the arrray
+        newArray.push(ourArray[i].moreinfohere[j] // this will assign the inner values
+
+// the above nested loop is not the ideal way to do it, below is the best its called a FOR OF loop
+                      for (character of chracters) {
+                            for(power of character.power)
+                                console.log(power)
+            // this will achieve the same thing as the longer nested for loop and is tidier
+                      }
