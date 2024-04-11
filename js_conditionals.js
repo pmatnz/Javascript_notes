@@ -100,11 +100,12 @@ for (let i=0;i < ourArray.length;i++) { // this will iterate over the array
 		alt: "A cat looking sad",
 	},
         
-    for (myNewArray of myobj) { // this is iterating over the entire array myObj and storing it inside myNewArray
-            for (emotions of myNewArray.emotionTags) { // emotions is the new variable here, myNewArray data which holds the data then we want to specifiy the exact
+    for (let myNewArray of myobj) { // this is iterating over the entire array myObj and storing it inside myNewArray
+            for (let emotions of myNewArray.emotionTags) { // emotions is the new variable here, myNewArray data which holds the data then we want to specifiy the exact
                 // data so we target emotionTags, all the emotionTag are now saved into the emotions variable
                 console.log(emotionTags) }
         }
+	    //*********DON"T FORGET TO ADD LET BEFORE THE NEW VARIABLE IN THE LOOP!!!!!!***************
                       
 
 
