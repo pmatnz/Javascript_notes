@@ -86,8 +86,26 @@ for (let i=0;i < ourArray.length;i++) { // this will iterate over the array
         newArray.push(ourArray[i].moreinfohere[j] // this will push the array inner info into the empty array newArray, only info from moreinfo here
 
 // the above nested loop is not the ideal way to do it, below is the best its called a FOR OF loop
-                      for (character of chracters) {
-                            for(power of character.power)
-                                console.log(power)
-            // this will achieve the same thing as the longer nested for loop and is tidier
-                      }
+// for of loop much easier way to interate over an array
+   myObj = {
+		emotionTags: ["scared"],
+		isGif: true,
+		image: "nervous2.gif",
+		alt: "A cat looking scared",
+	},
+	{
+		emotionTags: ["sad"],
+		isGif: true,
+		image: "sad.gif",
+		alt: "A cat looking sad",
+	},
+        
+    for (myNewArray of myobj) { // this is iterating over the entire array myObj and storing it inside myNewArray
+            for (emotions of myNewArray.emotionTags) { // emotions is the new variable here, myNewArray data which holds the data then we want to specifiy the exact
+                // data so we target emotionTags, all the emotionTag are now saved into the emotions variable
+                console.log(emotionTags) }
+        }
+                      
+
+
+        
