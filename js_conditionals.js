@@ -81,9 +81,9 @@ while (i < 5) { // This while loop will keep running until i becomes 5 or more
 // Iterating over arrays that have their own arrays these are nested loops. there are 2 ways to do this.
 ourArray = [1,3[3,4],3]
 newArray = [] // created an empty array to push the data into at the end
-for (let i=0;i < ourArray.length;i++) {
-    for (let j = 0; ourArray[i].moreinfohere.length;j++) { // this will get the inner values of the arrray
-        newArray.push(ourArray[i].moreinfohere[j] // this will assign the inner values
+for (let i=0;i < ourArray.length;i++) { // this will iterate over the array
+    for (let j = 0; ourArray[i].moreinfohere.length;j++) { // this will get the inner values of the arrray specifically moreinfohere
+        newArray.push(ourArray[i].moreinfohere[j] // this will push the array inner info into the empty array newArray, only info from moreinfo here
 
 // the above nested loop is not the ideal way to do it, below is the best its called a FOR OF loop
                       for (character of chracters) {
