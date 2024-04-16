@@ -1,0 +1,8 @@
+******************IMPORT AND EXPORTING FILES************************
+// Having large code is normal and to reduce the size of code you are writing you can import and export code into another js file, below is an example
+import {variableNameHere} from "/jsFileName"
+
+// On the code you want to to export use the following
+export const myVar = [1,2,3,5,6,7]
+
+Now you should be able to use the imported code snipped in any other JS file.
