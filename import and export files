@@ -5,4 +5,6 @@ import {variableNameHere} from "/jsFileName"
 // On the code you want to to export use the following
 export const myVar = [1,2,3,5,6,7]
 
+// The HTML file also needs type"module" added to the script tag
+
 Now you should be able to use the imported code snipped in any other JS file.
