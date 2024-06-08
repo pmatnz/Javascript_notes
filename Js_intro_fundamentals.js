@@ -93,3 +93,6 @@ let Myclass =  /\d+e\d+/i;
 // important not to use += or it may apend it
 
 .value // this is getting the current value the user has entered, will relate to form data usually
+
+Javascript will not accept CSS properties that have a - or other characters in it, you need to use camel casing, example below
+elementID.style.backgroundColor will work, elementID.style-background-color will not work
