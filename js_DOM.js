@@ -57,7 +57,11 @@ container.classlist.toggle('reverse") // this gives access to the containers cla
 myFunction.addEventListner('click', function (event //or e//) {
        consonle.log(event.target.id)                     
 } // Use this on an event listener and you can use 'click' or 'change" which will isten for any changes using the event.target.id will get you any id of a radio button clicked
-                              
+
+Classlists - you can add or remove using classlists to a single class or the entire partent element, example below
+    document.getElementById(e.target.id).parentElement.classList.remove('unread') // take control of the lement or the parent element and then make changes after the 
+    // .parentElement.classList. addhere
+
 
                            
                            
