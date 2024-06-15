@@ -52,5 +52,12 @@ style.backgroundColor = Red; / use if you already have event listeners setup
 
 container.classlist.toggle('reverse") // this gives access to the containers class list that is indide it, it then assigns the reverse css selector to it
  // you can target HTML child elements as long as they have classes assigned to them  
- // classlist access all the child elements listed inside, using toggle('') make sure to add your css selector in here.                          
+ // classlist access all the child elements listed inside, using toggle('') make sure to add your css selector in here.
+
+myFunction.addEventListner('click', function (event //or e//) {
+       consonle.log(event.target.id)                     
+} // Use this on an event listener and you can use 'click' or 'change" which will isten for any changes using the event.target.id will get you any id of a radio button clicked
+                              
+
+                           
                            
