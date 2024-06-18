@@ -62,6 +62,10 @@ Classlists - you can add or remove using classlists to a single class or the ent
     document.getElementById(e.target.id).parentElement.classList.remove('unread') // take control of the lement or the parent element and then make changes after the 
     // .parentElement.classList. addhere
 
+Using eventlistner to get IDs etc, don't need to create lots of getElementbyIDs we can just use the following
+    addEventListenr(function randomName (e)) {
+        console.log(e.target.id)
+    } // what this will do is uses a redefined function parametre which is e, this stands for event this will target any event , target.id this will log out the ID of the event it's self when used.
 
                            
                            
