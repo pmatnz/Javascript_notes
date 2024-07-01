@@ -68,5 +68,7 @@ Using eventlistner to get IDs etc, don't need to create lots of getElementbyIDs 
         console.log(e.target.id)
     } // what this will do is uses a redefined function parametre which is e, this stands for event this will target any event , target.id this will log out the ID of the event it's self when used.
 
-                           
+QuerySelector
+// Queryselector is able to get psudo elements eg document.querySelector('input[type="radio":checked') this will give access to all radio buttons that are currently "Checked"
+const myquery = document.QuerySelector('input[type="radio":checked]' // this will get me all the boxes values that are checked
                            
