@@ -61,6 +61,7 @@ myFunction.addEventListner('click', function (event //or e//) {
 Classlists - you can add or remove using classlists to a single class or the entire partent element, example below
     document.getElementById(e.target.id).parentElement.classList.remove('unread') // take control of the lement or the parent element and then make changes after the 
     // .parentElement.classList. addhere
+    //classlists can also be also use, document.getElementsbyClassName("classhere") this looks for all classes in the HTML with this class and manuiplates them                                           
 
 Using eventlistner to get IDs etc, don't need to create lots of getElementbyIDs we can just use the following
     addEventListenr(function randomName (e)) {
