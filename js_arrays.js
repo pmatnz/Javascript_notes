@@ -21,3 +21,9 @@ const myarry = [1,4,7,12,435,454]
 const myArryfilterTenary = myarry.filter(function(myarrtern){
   return myarrTern >= 18 // this shortens the if statement it will return myArrTern results that are greater or equal to 18
   })
+
+Accessing specific objects that are inside an array
+To access a specific object inside an array first you need to specifiy the location of the Array eg 
+ myarrywithObjects[0] // this will grab the object in position 0
+// After you have accessed that object you can then just use . notation to access a specific Object, say you wanted the image object do the following
+myarrywithObects[0].image // this is going to return only the object that is related to the image
