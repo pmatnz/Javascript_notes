@@ -1,0 +1,30 @@
+to create an dropdown list use the following, it can be added into a form but it's fine with out one.
+(if using a form makesure to reminder to stop the default from running on submit "e.preventdefault")
+
+<label>My Dropdown</label> // Create the label for
+<select>
+  <option>  Dropdown one </option>
+  <option>  Dropdown one </option>
+  // add your dropdown options , each requires it's own option
+  
+</select> // this creates the dropdown button
+
+Each option also requires a "value" this value is what gets sent to the server when selected
+
+div>
+			<label for="superpowers">Choose Your Superpower:</label>
+			<select id="superpowers">
+				<option value="flight">Flight</option>
+				<option value="Invisibility">Invisibility</option>
+				<option value="superStrength">Super Strength</option>
+				<option value="Telepathy">Telepathy</option>
+				<option value="timeTravel">Time Travel</option>
+				<option value="Wisdom">Wisdom</option>
+			</select>
+		</div>
+
+If you want an element to be seleted by default use the "selected" attribute, this is simliar to required
+
+mulitple attribute allows you to select multiple options
+
+<optgroup> this splits out the grops if required, this nest the options under optgroup make sure to give a label to optgroup
