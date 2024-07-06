@@ -28,3 +28,5 @@ If you want an element to be seleted by default use the "selected" attribute, th
 mulitple attribute allows you to select multiple options
 
 <optgroup> this splits out the grops if required, this nest the options under optgroup make sure to give a label to optgroup
+
+Inserting icons or other items via a CDN eg CDNJS you can add icons to your HTML just copy the link and add this into the <head> of your HTML
