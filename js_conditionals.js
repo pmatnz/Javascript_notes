@@ -114,3 +114,8 @@ For each can also be used to loop over an array , syntax is the following
 	    myArray.foreach(function(myArrays){ // the paramtre holds the data of myArray this acts like the first variable in a for of loop
 		    insert what you want done in here
 	    })
+ForEach loop can also be nested just add a 2nd line
+
+	myArray.foreach(function(myArrays){ // the paramtre holds the data of myArray this acts like the first variable in a for of loop
+		    myArrays.forEach(arrayTwo) {
+			    code here})//(use dot notatation if accessing objects)//
