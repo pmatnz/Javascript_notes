@@ -109,4 +109,8 @@ for (let i=0;i < ourArray.length;i++) { // this will iterate over the array
                       
 
 
-        
+FOR EACH LOOP
+For each can also be used to loop over an array , syntax is the following
+	    myArray.foreach(function(myArrays){ // the paramtre holds the data of myArray this acts like the first variable in a for of loop
+		    insert what you want done in here
+	    })
