@@ -38,4 +38,7 @@ data-myPictureData = "your Data".
 To acess the dataattribute you can use the event eg document.addEventlistern(e) {
 console.log(e.target.dataset.insertnamehere) This will look out the name you havd assiged it in the HTML
 
+.parentElement will target all elements inside the main DIV good for using with event for targetting dynamic content.
+.classlist use this to target specific CSS selectors to change the content using an if statement
+
 
