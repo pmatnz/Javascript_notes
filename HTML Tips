@@ -35,6 +35,8 @@ DATA ATTRIBUTE
 Linking things like icons to pictures and ensuring icons or anything else for that matter belong to that need to use the data attribute, the syntax is the following
 data-myPictureData = "your Data".
 
+Don't use uppercase characters when naming the dataattribute in HTML use dashes if you need multiple names
+
 To acess the dataattribute you can use the event eg document.addEventlistern(e) {
 console.log(e.target.dataset.insertnamehere) This will look out the name you havd assiged it in the HTML
 
