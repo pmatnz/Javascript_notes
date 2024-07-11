@@ -27,3 +27,12 @@ To access a specific object inside an array first you need to specifiy the locat
  myarrywithObjects[0] // this will grab the object in position 0
 // After you have accessed that object you can then just use . notation to access a specific Object, say you wanted the image object do the following
 myarrywithObects[0].image // this is going to return only the object that is related to the image
+
+FILTER
+//Using the filter object in an array will return a new array with only the results that match the fitler example
+
+const myArray = myArrayData.filter(function(NewArraywithFilterresults) {
+  return comparingInfo === NewArraywithFilterresults
+} [0] // IF YOU NEED TO ACCESS AN OBJECT IN THIS ARRAY USE INDEX 0 which will return an object , without it , it returns an array datatype.
+
+// I now have access to the array values and can manipulate this anyway i want.                                   
