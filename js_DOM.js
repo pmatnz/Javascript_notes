@@ -53,6 +53,9 @@ style.backgroundColor = Red; / use if you already have event listeners setup
 container.classlist.toggle('reverse") // this gives access to the containers class list that is indide it, it then assigns the reverse css selector to it
  // you can target HTML child elements as long as they have classes assigned to them  
  // classlist access all the child elements listed inside, using toggle('') make sure to add your css selector in here.
+**** You can use toggle to enable and disable a class, you do not have to use a bolean to do this example below
+    	document.getElementById(`replies-${replyId}`).classList.toggle("hidden"); // will toggle hidden on and off
+
 
 myFunction.addEventListner('click', function (event //or e//) {
        consonle.log(event.target.id)                     
