@@ -32,3 +32,8 @@ gold += 10 // this is the short hand way this is called compound assignment
 Object.Values(myVar) // this will get the value which is the 2nd value in an object
 Object.Keys(myVar) // this will get the key
 Object.entries(myVar) // this will get both
+
+**********Object Destructuring***********
+// Being able to access objects faster without writing the same code with dot notation over and over, exmaple of this using person object above
+    const {name,age,city} = person
+// now if i wanted to use these in a sentence all i would need to do would be "Hello my name is ${name} and i am ${age} years old. 
