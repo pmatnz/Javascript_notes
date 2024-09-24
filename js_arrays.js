@@ -50,5 +50,5 @@ const myaddAdd = 1.2
 const usingMap = myArr.map(function(mappedArray.index){ // this will now show each index
         return mappedArray * myaddAdd)
 
-//IMPORTANT - .map returns a NEW array, foreach does not    
+//IMPORTANT - .map returns a NEW array, foreach does not  , you also can NOT chain on to an array that just edits existing data only new Array eg myArr.join() new array ONLY
                                    
