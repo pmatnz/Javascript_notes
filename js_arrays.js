@@ -49,4 +49,6 @@ const usingMap = myArr.map(function(mappedArray){
 const myaddAdd = 1.2
 const usingMap = myArr.map(function(mappedArray.index){ // this will now show each index
         return mappedArray * myaddAdd)
+
+//IMPORTANT - .map returns a NEW array, foreach does not    
                                    
