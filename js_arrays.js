@@ -36,3 +36,17 @@ const myArray = myArrayData.filter(function(NewArraywithFilterresults) {
 } [0] // IF YOU NEED TO ACCESS AN OBJECT IN THIS ARRAY USE INDEX 0 which will return an object , without it , it returns an array datatype.
 
 // I now have access to the array values and can manipulate this anyway i want.                                   
+
+***********.MAP method*************
+// .map can be used on an array you can use this to manipulate the individual indexes in an array sytax below
+const myArr = [1,3,4,6,3]
+const myaddAdd = 1.2
+const usingMap = myArr.map(function(mappedArray){
+        return mappedArray * myaddAdd)
+// this will check each index and * them by 1.2 and return this new value in the array usingMap
+// if you want to display each index it also takes another parametre "index"
+  const myArr = [1,3,4,6,3]
+const myaddAdd = 1.2
+const usingMap = myArr.map(function(mappedArray.index){ // this will now show each index
+        return mappedArray * myaddAdd)
+                                   
