@@ -65,4 +65,8 @@ const exampleFunction = (param) => {
 }
 
 //brackets are not required if there is only one parametre, if more than one they are required
+//arrow functions also don't required a return statement so then above can be turned into the following
+
+const examplefunctions = param => "data here"
+const examplefunction = (param1,param2) => "data here"
 
