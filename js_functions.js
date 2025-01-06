@@ -70,3 +70,4 @@ const exampleFunction = (param) => {
 const examplefunctions = param => "data here"
 const examplefunction = (param1,param2) => "data here"
 
+//more complex logic requires return statement and curly {} bracers if you want to add something like an if statement
