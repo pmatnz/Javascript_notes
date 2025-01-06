@@ -49,3 +49,9 @@ import {myFunction} from "add file link here" // adding import enables us to use
 
 <script src="functions.js" type="module"></script>
 <script src="index.js" type="module"></script>
+
+// function declarations are hoisted this means they can be accessed anywhere in the file , function expressions are only accessed when you add dad underneath it, they are not hoisted (global)
+
+const exampleFunction = function(param) {
+	return stuff here
+}
