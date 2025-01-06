@@ -55,3 +55,14 @@ import {myFunction} from "add file link here" // adding import enables us to use
 const exampleFunction = function(param) {
 	return stuff here
 }
+
+//Arrow Functions
+
+// The above function gets turned into the following
+
+const exampleFunction = (param) => {
+	return "data here"
+}
+
+//brackets are not required if there is only one parametre, if more than one they are required
+
