@@ -1,0 +1,8 @@
+// REST parameter is used when you could have more than one arguement but only 2 parameters , use RESt and this will take in any additional arguments above what parameters are currently allocated.
+
+/Syntax Below
+
+Function RestTest (parameterOne, ...paramenter2){
+  // this will take in more than 2
+
+  reset parameter is listed last
