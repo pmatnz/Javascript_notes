@@ -8,3 +8,11 @@ fetch("insert link in here") // insert API link
 
 console.log(data) // this is going to show the message and status , if i used console.log(data.message) this would only
 show the generated link , doing this is useful if you want to update the HTML
+
+Anthoer example
+
+fetch("https://apis.scrimba.com/bored/api/activity")
+  .then (response => response.json())
+  .then (data => {console.log(data
+                  document.getElementbyID = 'placeholder'.innerHTML = `<p> This is API ${data.message} </p>`                
+}
