@@ -1,0 +1,10 @@
+API - Application Programming interface
+
+One method is using "Fetch" syntax below
+
+fetch("insert link in here") // insert API link
+.then (response => response.json()) // using arrow functions takes in the response from the server this one would be "Success"
+.then (data => console.log(data) // Logs out the data that has been received
+
+console.log(data) // this is going to show the message and status , if i used console.log(data.message) this would only
+show the generated link , doing this is useful if you want to update the HTML
