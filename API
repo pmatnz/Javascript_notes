@@ -16,3 +16,12 @@ fetch("https://apis.scrimba.com/bored/api/activity")
   .then (data => {console.log(data
                   document.getElementbyID = 'placeholder'.innerHTML = `<p> This is API ${data.message} </p>`                
 }
+
+POST
+Using post will send data to the service, the format for post is as follows
+
+featch("URL HERE", {method: "POST",
+      body: JSON.stringify.// convert JSON to a string
+        {add what is being sent to the service in the body}
+)
+  
