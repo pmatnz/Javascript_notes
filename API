@@ -20,8 +20,13 @@ fetch("https://apis.scrimba.com/bored/api/activity")
 POST
 Using post will send data to the service, the format for post is as follows
 
-featch("URL HERE", {method: "POST",
+fetch("URL HERE", {method: "POST",
       body: JSON.stringify.// convert JSON to a string
-        {add what is being sent to the service in the body}
+        {add what is being sent to the service in the body} ,
+      headers: {
+            "Content-type": "application/json"
 )
+
+Body: "This is content that will be sent to the server, sometimes you will need to convert it into a string so use JSON.stringify
+Header: "Heads tell the service what format the content is in so JSON, example above.
   
