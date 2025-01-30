@@ -29,4 +29,11 @@ fetch("URL HERE", {method: "POST",
 
 Body: "This is content that will be sent to the server, sometimes you will need to convert it into a string so use JSON.stringify
 Header: "Heads tell the service what format the content is in so JSON, example above.
-  
+
+REST API or RESTFULL API
+Representital state transfer
+Standard for clients and servers to communicate
+
+Statelessness or session state, client sending requests to the server but the server not retaining any info on that transaction.
+
+Query strings use the format ?type=road if you want to add too use & so ?type=road&brand=trek
